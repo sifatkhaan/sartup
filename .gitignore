@@ -1,0 +1,22 @@
+node_modules/
+
+.env
+.env.local
+.env.*.local
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore IDE-specific files (e.g., for VSCode)
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore compressed files
+*.zip
+*.tar.gz
+*.rar
