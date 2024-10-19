@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="content" >
+        <div class="mx-2 sm:mx-8 md:mx-14 pb-10">
+            <!-- navbar -->
+            <nav class="text-gray-600 py-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <div class="flex justify-between items-center w-1/2">
+                        <div class="text-lg font-bold">
+                            <a href="index.html" class="hover:text-gray-400">
+                                <div class="flex text-black">
+                                    <p class="bg-orange-500 h-8 w-8 rounded-full text-white text-end">Sa</p>
+                                    <p>rtup</p>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="hidden md:flex space-x-5">
+                            <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                            <li><a href="about.html" class="hover:text-orange-500">Why Us?</a></li>
+                            <li><a href="feature.html" class="hover:text-orange-500">Features</a></li>
+                            <li><a href="pricing.html" class="hover:text-orange-500">Pricing</a></li>
+                            <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <div class="flex justify-end w-1/2 ">
+                        <div class="md:hidden flex items-center">
+                            <button id="mobile-menu-button" class=" focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hidden md:flex items-center gap-2">
+                            <div>
+                                <a href="create-accout.html" class="text-orange-500">Create an account</a>
+                            </div>
+                            <button id="mobile-menu-button"
+                                class="flex justify-center items-center text-white focus:outline-none bg-orange-500 px-2 py-1 rounded-md">
+                                Login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden">
+                    <!-- <ul class="flex flex-col items-center space-y-2 py-4 bg-orange-500 text-white"> -->
+                        <ul class="flex flex-row justify-between items-center py-4 bg-orange-500 text-white px-2">
+                            <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                            <li><a href="about.html" class="hover:text-gray-400">Why Us?</a></li>
+                            <li><a href="feature.html" class="hover:text-gray-400">Features</a></li>
+                            <li><a href="pricing.html" class="hover:text-gray-400">Pricing</a></li>
+                            <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+                <!-- about part start -->
+                <div class="bg-orange-100">
+                    <div class="mx-2 sm:mx-8 md:mx-14">
+                        <div class="block md:flex py-4 md:py-14 gap-10">
+                            <div class="w-full md:w-2/5">
+                                <div>
+                                    <image src="../public/images/corporate/girl.jpg" class="p-2 w-full" />
+                                </div>
+                            </div>
+                            <div class="w-full md:w-3/5">
+                                <div>
+                                    <h3 class="text-xl text-orange-500">About Us</h3>
+                                    <h1 class="text-3xl font-bold">Modern business must include</h1>
+                                    <h1 class="text-3xl font-bold">it is a crucial element</h1>
+                                    <p class="py-5">We help businesess of all shapes or sizes to online world. Our skills of
+                                        creative
+                                        and technical
+                                        areas</p>
+                                </div>
+                                <div class="grid grid-cols-1 justify-items-center gap-3 lg:justify-between md:grid-cols-2">
+                                    <div class="flex gap-3 items-center md:items-start">
+                                        <div class="flex items-center">
+                                            <i
+                                                class="fas fa-rocket text-white pt-4 text-xl text-center bg-orange-500 h-12 w-12 rounded-full"></i>
+                                        </div>
+        
+                                        <div>
+                                            <h2 class="text-xl font-bold">Our Ambition</h2>
+                                            <p>Everything we deed in today</p>
+                                            <p>society has to do with business</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <i
+                                            class="fas fa-globe text-white pt-4 text-xl text-center bg-orange-500 h-12 w-12 rounded-full"></i>
+                                        <div>
+                                            <h2 class="text-xl font-bold">Our Purpose</h2>
+                                            <p>Everything we deed in today</p>
+                                            <p>society has to do with business</p>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about part end -->
+                         <!-- subscribe part start -->
+        <div class="bg-orange-100">
+            <div class="mx-2 sm:mx-8 md:mx-14 py-4 md:py-10">
+                <div class="flex w-full justify-center">
+                    <div class="w-full md:w-[45%] text-center">
+                        <h1 class="text-2xl md:text-3xl font-bold">The Future Is Intriguing</h1>
+                        <h1 class="text-2xl md:text-3xl font-bold pb-2">Collectively, Let's Create It</h1>
+                        <p>Choosing the right website pricing plan depends on the specific needs of your business. Small
+                            websites can often thrive on basic plans,</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-5 md:py-10">
+                    <button class="text-white bg-orange-500 rounded-full py-1 px-3">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <!-- subcribe part end -->
+        <!-- footer part start -->
+        <div class="bg-orange-500">
+            <div class="mx-2 sm:mx-8 md:mx-14 py-5 md:py-10">
+                <div class="flex w-full justify-center">
+                    <div class="w-full md:w-[45%] text-center">
+                        <a href="index.html" class="hover:text-gray-400">
+                            <div class="flex text-black items-center justify-center font-bold py-2 md:text-2xl">
+                                <p
+                                    class="flex items-center justify-end bg-white h-10 w-10 rounded-full text-black  text-end">
+                                    Sa</p>
+                                <p class="text-white ">rtup</p>
+                            </div>
+                        </a>
+                        <p class="text-white">Choosing the right website pricing plan depends on the specific needs of
+                            your
+                            business. Small
+                            websites can often thrive on basic plans,</p>
+                    </div>
+                </div>
+                <div class="flex justify-center py-5 md:py-10 gap-3">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook text-white text-2xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter text-white text-2xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram text-white text-2xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin text-white text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer part end -->
+    </div>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>
