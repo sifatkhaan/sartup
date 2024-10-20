@@ -909,6 +909,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1207,6 +1211,11 @@ video {
   .sm\:justify-end {
     justify-content: flex-end;
   }
+
+  .sm\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
 }
 
 @media (min-width: 768px) {
@@ -1270,6 +1279,10 @@ video {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:items-start {
