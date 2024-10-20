@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 //carousel
 $(document).ready(function () {
     $('.about-slider').slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -75,9 +75,9 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $('.testimonial-slider').slick({
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         //   dots: true,
         arrows: false,
@@ -90,7 +90,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 640, // mobile screen (640px and below)
+                breakpoint: 640, 
                 settings: {
                     slidesToShow: 1,  // Show 1 slide on small screens
                     slidesToScroll: 1
