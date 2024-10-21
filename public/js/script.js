@@ -107,3 +107,7 @@ $('.fa-circle-left').click(function () {
 $('.fa-circle-right').click(function () {
     $('.testimonial-slider').slick('slickNext');
 });
+
+fetch('src/component/footer.html').then(response=> response.text()).then(data=>{
+    document.getElementById('footer').innerHTML = data
+});
