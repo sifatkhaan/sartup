@@ -34,10 +34,56 @@
     100% { transform: rotate(360deg); }
   }
   .slick-slide {
-    margin: 0 5px; /* Adjust the gap size as needed */
+    margin: 0 5px;
   }
 
   .slick-track {
     display: flex;
     gap: 20px; 
   }
+/* chat box */
+/* #chat-box {
+  transform: translateY(100%);
+  opacity: 0; 
+}
+
+.chat-box-open {
+  transform: translateY(0); 
+  opacity: 1; 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+}
+#chat-box {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+} */
+
+#mobile-menu.hidden {
+  display: none;
+}
+
+/* Applying the animation when opening */
+#mobile-menu.slide-in {
+  animation: slideIn 0.5s forwards; /* Slide in with 0.5s duration */
+}
+
+/* Applying the animation when closing */
+#mobile-menu.slide-out {
+  animation: slideOut 0.5s forwards; /* Slide out with 0.5s duration */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Start off-screen */
+  }
+  to {
+    transform: translateX(0); /* Fully on-screen */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0); /* Start fully on-screen */
+  }
+  to {
+    transform: translateX(100%); /* Move off-screen */
+  }
+}

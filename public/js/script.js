@@ -1,10 +1,10 @@
 
 // Toggle Mobile Menu
-const menuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+// const menuButton = document.getElementById('mobile-menu-button');
+// const mobileMenu = document.getElementById('mobile-menu');
+// menuButton.addEventListener('click', () => {
+//     mobileMenu.classList.toggle('hidden');
+// });
 
 //preloader
 window.addEventListener("load", function () {
@@ -33,6 +33,32 @@ $(document).ready(function () {
                 breakpoint: 768, // md screen (768px and above)
                 settings: {
                     slidesToShow: 2,  // Show 2 slides on md screens and above
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 640, // mobile screen (640px and below)
+                settings: {
+                    slidesToShow: 1,  // Show 1 slide on small screens
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+$(document).ready(function () {
+    $('.service-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        //   dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768, // md screen (768px and above)
+                settings: {
+                    slidesToShow: 3,  // Show 2 slides on md screens and above
                     slidesToScroll: 1
                 }
             },
@@ -111,3 +137,52 @@ $('.fa-circle-right').click(function () {
 fetch('src/component/footer.html').then(response=> response.text()).then(data=>{
     document.getElementById('footer').innerHTML = data
 });
+
+
+//chat box
+const chatButton = document.getElementById('chatButton');
+const chatBox = document.getElementById('chat-box');
+
+chatButton.addEventListener('click', () => {
+    chatBox.classList.toggle('hidden');
+});
+// drwaer
+
+
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuButton = document.getElementById('close-menu-button');
+    // menuButton.addEventListener('click', () => {
+    //     // Toggle the menu drawer
+    //     mobileMenu.classList.toggle('translate-x-full');
+    //     mobileMenu.classList.toggle('translate-x-0');
+    //     mobileMenu.classList.toggle('hidden');
+    // });
+
+    // closeMenuButton.addEventListener('click', () => {
+    //     mobileMenu.classList.add('translate-x-full');
+    //     setTimeout(() => {
+    //         mobileMenu.classList.add('hidden'); 
+    //     }, 400);
+    // });
+
+
+// Open the drawer
+menuButton.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden', 'slide-out');
+        mobileMenu.classList.add('slide-in');
+    }
+});
+
+// Close the drawer
+closeMenuButton.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('slide-in')) {
+        mobileMenu.classList.remove('slide-in');
+        mobileMenu.classList.add('slide-out');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 500); // Match this timeout with the animation duration
+    }
+});
+
