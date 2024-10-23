@@ -58,14 +58,14 @@ $(document).ready(function () {
             {
                 breakpoint: 768, // md screen (768px and above)
                 settings: {
-                    slidesToShow: 3,  // Show 2 slides on md screens and above
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 640, // mobile screen (640px and below)
+                breakpoint: 640,
                 settings: {
-                    slidesToShow: 1,  // Show 1 slide on small screens
+                    slidesToShow: 2, 
                     slidesToScroll: 1
                 }
             }
@@ -118,7 +118,7 @@ $(document).ready(function () {
             {
                 breakpoint: 640, 
                 settings: {
-                    slidesToShow: 1,  // Show 1 slide on small screens
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }
